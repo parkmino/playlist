@@ -80,31 +80,83 @@
         // 3. MBC 채널 정보
         const mbcChannels = [
             { name: "MBC강원영동TV", url: "http://123.254.93.7:1935/tvlive/livestream2/playlist.m3u8" },
+            { name: "MBC강원영동표준FM", url: "http://123.254.72.24:1935/amlive/livestream/playlist.m3u8" },
+            { name: "MBC강원영동FM4U", url: "http://123.254.72.24:1935/fmlive/livestream/playlist.m3u8" },
             { name: "MBC대구TV", url: "https://5ee1ec6f32118.streamlock.net/live/livetv/playlist.m3u8" },
+            { name: "MBC대구표준FM", url: "https://5ee1ec6f32118.streamlock.net/amradio/am/playlist.m3u8" },
+            { name: "MBC대구FM4U", url: "https://5ee1ec6f32118.streamlock.net/fmradio/fm/playlist.m3u8" },
             { name: "MBC대전TV", url: "https://ns1.tjmbc.co.kr/live/myStream.sdp/playlist.m3u8" },
+            { name: "MBC대전표준FM", url: "https://ns1.tjmbc.co.kr/live_am/live_am.stream/playlist.m3u8" },
+            { name: "MBC대전FM4U", url: "https://ns1.tjmbc.co.kr/live_fm/live_fm.stream/playlist.m3u8" },
             { name: "MBC목포TV", url: "https://vod.mpmbc.co.kr/a_live/25246741/ch001/playlist.m3u8" },
+            { name: "MBC목포표준FM", url: "https://vod.mpmbc.co.kr/live/encoder-am/playlist.m3u8" },
+            { name: "MBC목포FM4U", url: "https://vod.mpmbc.co.kr/live/encoder-fm/playlist.m3u8" },
             { name: "MBC전주TV", url: "https://5ee9633b25727.streamlock.net:443/jmbc_tv/jmbc_tv.stream/playlist.m3u8" },
+            { name: "MBC전주표준FM", url: "https://5ee9633b25727.streamlock.net:443/jmbc_sfm/myStream/playlist.m3u8" },
+            { name: "MBC전주FM4U", url: "https://5ee9633b25727.streamlock.net:443/jmbc_fm4u/myStream/playlist.m3u8" },
             { name: "MBC제주TV", url: "https://wowza.jejumbc.com/live/tv_jejumbc/playlist.m3u8" },
+            { name: "MBC제주표준FM", url: "https://onairfm.jejumbc.com/hls/onairfmjejumbc/index.m3u8" },
+            { name: "MBC제주FM4U", url: "https://onairsfm.jejumbc.com/hls/onairsfmjejumbc/index.m3u8" },
             { name: "MBC춘천TV", url: "https://stream.chmbc.co.kr/TV/myStream/playlist.m3u8" },
-            { name: "MBC충북TV", url: "http://211.33.246.4:32954/cj_live/myStream.sdp/playlist.m3u8" }
+            { name: "MBC춘천표준FM", url: "https://stream.chmbc.co.kr/live_radio/fm2/playlist.m3u8" },
+            { name: "MBC춘천FM4U", url: "https://stream.chmbc.co.kr/live_radio2/fm1_source/playlist.m3u8" },
+            { name: "MBC충북TV", url: "http://211.33.246.4:32954/cj_live/myStream.sdp/playlist.m3u8" },
+            { name: "MBC충북표준FM", url: "http://211.33.246.4:32954/radio_stfm/myStream.sdp/playlist.m3u8" },
+            { name: "MBC충북FM4U", url: "http://211.33.246.4:32954/radio_fm/myStream.sdp/playlist.m3u8" }
         ];
 
         // 4. SBS 채널 정보
         const sbsChannels = [
             { name: "G1강원TV", url: "http://61.82.49.4:1935/live/_definst_/tv.stream/playlist.m3u8" },
+            { name: "G1강원FM", url: "http://61.82.49.4:1935/fm/_definst_/myStream/playlist.m3u8" },
             { name: "KBC광주TV", url: "https://vod.ikbc.co.kr/KBCTV/tv/playlist.m3u8" },
+            { name: "KBC광주FM", url: "https://vod.ikbc.co.kr/KBCFM/kbcra_aac/playlist.m3u8" },
             { name: "KNN부산경남", url: "https://stream1.knn.co.kr/hls/9ly4534y7dm2xfa123r2_tv/index.m3u8" },
+            { name: "KNN부산경남파워FM", url: "https://stream1.knn.co.kr/hls/lb9ezl87d37uu0vy65bb_pfm/index.m3u8" },
+            { name: "KNN부산경남러브FM", url: "https://stream1.knn.co.kr/hls/b3y26uu6471k8tes9w7h_lfm/index.m3u8" },
             { name: "UBC울산TV", url: "https://stream.ubc.co.kr/hls/ubctvstream/index.m3u8" },
+            { name: "UBC울산FM", url: "https://stream.ubc.co.kr/hls/ubcfmstream/index.m3u8" },
             { name: "JTV전주TV", url: "https://jtvonair.sbsoft.net/jtv_live/myStream/playlist.m3u8" },
+            { name: "JTV전주FM", url: "https://jtvonair.sbsoft.net/jtv_radio/myStream/playlist.m3u8" },
             { name: "CJB청주TV", url: "http://1.222.207.80:1935/live/cjbtv/playlist.m3u8" },
-            { name: "JIBS제주TV", url: "http://123.140.197.22/stream/1/play.m3u8" }
+            { name: "CJB청주FM", url: "http://1.222.207.80:1935/live/cjbradio/playlist.m3u8" },
+            { name: "JIBS제주TV", url: "http://123.140.197.22/stream/1/play.m3u8" },
+            { name: "JIBS제주FM", url: "http://123.140.197.22/stream/2/play.m3u8" }
         ];
 
-        // 5. 기타 채널 정보 (일부 생략 유지)
+        // 5. 기타 채널 정보
         const etcChannels = [
             { name: "TV CHOSUN", url: "https://onaircdn.tvchosun.com/origin1/_definst_/tvchosun_s1/playlist.m3u8" },
+            { name: "TV CHOSUN2", url: "https://onair2cdn.tvchosun.com/origin2/_definst_/tvchosun_s1/playlist.m3u8" },
             { name: "국방TV", url: "http://mediaworks.dema.mil.kr:1935/live_edge/cudo.sdp/playlist.m3u8" },
-            { name: "국회방송", url: "https://m.webcast.go.kr/live/_definst_/smil:natv_720p.smil/playlist.m3u8" }
+            { name: "국방FM", url: "http://mediaworks.dema.mil.kr:1935/live_edge/audio.sdp/playlist.m3u8" },
+            { name: "국악방송", url: "http://mgugaklive.nowcdn.co.kr/gugakvideo/gugakvideo.stream/playlist.m3u8" },
+            { name: "국악방송 라디오", url: "http://mgugaklive.nowcdn.co.kr/gugakradio/gugakradio.stream/playlist.m3u8" },
+            { name: "국회방송", url: "https://m.webcast.go.kr/live/_definst_/smil:natv_720p.smil/playlist.m3u8" },
+            { name: "딜라이브TV 서울", url: "http://112.214.255.230/hls/ch02/playlist.m3u8" },
+            { name: "딜라이브TV 경기", url: "http://112.214.255.233/hls/ch02/playlist.m3u8" },
+            { name: "방송대학TV", url: "https://live.knou.ac.kr/knou1/live1/playlist.m3u8" },
+            { name: "복지TV", url: "http://hls.midibus.kinxcdn.com/live/ch_19b36d47/19b81079d4dfc4f7/playlist.m3u8" },
+            { name: "서경방송", url: "https://live.iscs.co.kr/live/1080p.stream/playlist.m3u8" },
+            { name: "시민방송 RTV", url: "https://rtv-stream.a04f922e9e85c8d25ebfeae3dfd22a67.com/hls/rtv_1080/index.m3u8" },
+            { name: "아리랑 TV", url: "http://amdlive-ch01.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8" },
+            { name: "아리랑 라디오", url: "http://amdlive-ch03.ctnd.com.edgesuite.net/arirang_3ch/smil:arirang_3ch.smil/playlist.m3u8" },
+            { name: "지방자치TV", url: "https://jjctv.ecn.cdn.infralab.net/jjctv/live/playlist.m3u8" },
+            { name: "채널i", url: "http://1.201.160.177:1935/live/myStream/playlist.m3u8" },
+            { name: "한국농업방송", url: "https://media.joycorp.co.kr:4443/live/live_360p/playlist.m3u8" },
+            { name: "ABN아름방송", url: "https://vod2.abn.co.kr/IPHONE/abn.m3u8" },
+            { name: "CSS 충북방송", url: "https://media.ccstv.co.kr:1936/OnAirEdge/OnAir/playlist.m3u8" },
+            { name: "KCTV광주CH05", url: "http://119.77.96.184:1935/chn05/chn05/playlist.m3u8" },
+            { name: "KCTV광주CH21", url: "http://119.77.96.184:1935/chn21/chn21/playlist.m3u8" },
+            { name: "KCTV제주채널7", url: "https://vod.kctvjeju.com/LIVE/ch7/playlist.m3u8" },
+            { name: "KCTV제주채널20", url: "https://vod.kctvjeju.com/ch7/ch4/playlist.m3u8" },
+            { name: "KTV국민방송", url: "https://hlive.ktv.go.kr/live/klive_h.stream/playlist.m3u8" },
+            { name: "NHTV농협방송", url: "https://nonghyup-live.myskcdn.net/nonghyup/nhlive/playlist.m3u8" },
+            { name: "OBS경인TV", url: "https://vod3.obs.co.kr:444/live/obsstream1/tv.stream/playlist.m3u8" },
+            { name: "OBS경인라디오", url: "https://vod3.obs.co.kr:444/live/obsstream1/radio.stream/playlist.m3u8" },
+            { name: "tbsTV", url: "https://cdntv.tbs.seoul.kr/tbs/_definst_/tbs_tv_web_720.smil/playlist.m3u8" },
+            { name: "tbsFM", url: "https://cdnfm.tbs.seoul.kr/tbs/_definst_/tbs_fm_web_360.smil/playlist.m3u8" },
+            { name: "tbseFM", url: "https://cdnefm.tbs.seoul.kr/tbs/_definst_/tbs_efm_web_720.smil/playlist.m3u8" }
         ];
 
         // 플레이어 재생 함수 (에러 핸들링 대폭 강화)
